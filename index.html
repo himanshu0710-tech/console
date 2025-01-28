@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consolee!</title>
+</head>
+
+<body>
+    <script>
+        const str = "Javascript is awesome!";
+        console.log("Original String:", str);
+        const upperCasestr = str.toUpperCase();
+        console.log("Uppercase String:", upperCasestr);
+        const indexofawesome = str.indexOf("awesome");
+        console.log("Index of awesome", indexofawesome);
+        const replacedstr = str.replace("awesome", "fun");
+        console.log("Replaced String:", replacedstr);
+        const first10characters = str.slice(0, 10);
+        console.log("First 10 Characters:", first10characters);
+
+        const name = "Alice";
+        const age = 25;
+        const city = "New York";
+        const introduction = Hi, I am ${name}. I am ${age} years old and live in ${city}.;
+        console.log(introduction);
+
+        const numbers = [3, 5, 7, 9, 11];
+        numbers.push(13);
+        numbers.shift();
+        numbers.reverse();
+        const sum = numbers.reduce((acc, curr) => acc + curr, 0);
+        console.log("Modified Array:", numbers);
+        console.log("Sum To The Console", sum);
+
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const dayOfWeek = daysOfWeek[now.getDay()];
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const formattedDate = ${year}-${String(month).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')};
+        console.log("Current Date:", formattedDate);
+        console.log("Current Year:", year);
+        console.log("Current Month:", month);
+        console.log("Current Day of the Week:", dayOfWeek);
+        console.log("Current Time:", ${hour}:${String(minute).padStart(2, '0')});
+
+
+        const randomNumber = Math.random() * 100 + 1;
+        console.log("Random number (decimal):", randomNumber);
+        const roundedNumber = Math.round(randomNumber);
+        console.log("Rounded number:", roundedNumber);
+        const numberToSqrt = 144;
+        const squareRoot = Math.sqrt(numberToSqrt);
+        console.log("Square root of", numberToSqrt, ":", squareRoot);
+        const number = [4, 7, 1, 9, 2];
+        const maxNumber = Math.max(...number);
+        const minNumber = Math.min(...number);
+        console.log("Maximum number:", maxNumber);
+        console.log("Minimum number:", minNumber);
+    </script>
+</body>
+
+</html>
