@@ -23,7 +23,7 @@
         const name = "Alice";
         const age = 25;
         const city = "New York";
-        const introduction = Hi, I am ${name}. I am ${age} years old and live in ${city}.;
+        const introduction =` Hi, I am ${name}. I am ${age} years old and live in ${city}.`;
         console.log(introduction);
 
         const numbers = [3, 5, 7, 9, 11];
@@ -41,12 +41,12 @@
         const dayOfWeek = daysOfWeek[now.getDay()];
         const hour = now.getHours();
         const minute = now.getMinutes();
-        const formattedDate = ${year}-${String(month).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')};
+        const formattedDate = `${year}-${String(month).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
         console.log("Current Date:", formattedDate);
         console.log("Current Year:", year);
         console.log("Current Month:", month);
         console.log("Current Day of the Week:", dayOfWeek);
-        console.log("Current Time:", ${hour}:${String(minute).padStart(2, '0')});
+        console.log("Current Time:", `${hour}:${String(minute).padStart(2, '0')}`);
 
 
         const randomNumber = Math.random() * 100 + 1;
